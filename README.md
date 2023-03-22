@@ -1,3 +1,3 @@
 # jsmastery_projects
 
-First project of the 4 proposed by jsmastery youtube.
+First Project: Fully Responsive Modern UI/UX Website in React JS
