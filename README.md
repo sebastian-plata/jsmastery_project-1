@@ -6,7 +6,9 @@ First Project: Fully Responsive Modern UI/UX Website in React JS
 
 **File strucutre**
 
-Each component is stored in its own directory, named after themselves, and in turn every component directory is stored in a "/components" directory. 
+Each component is stored in its own directory, named after themselves, and in turn every component directory is stored in a "/components" directory.
+
+This also applies to the structure of the project itself. It is incredibly handy to have it set before you start working on the components because it makes the work flow so much better. So, right at the start of the project (after you're done with the file structure) you should go to your "App.js" file and define the structure of the web page using each of the components self-closing tags and other elements needed.
 
 *What is a component?*
 
@@ -80,7 +82,7 @@ Install "ES7 React/Redux/GraphQL/React-Native snippets" extension to gain access
 
     rface ---> automatically creates component boilerplate
 
-Time-stamp: 1:06:00
+**Time-stamp: 1:06:00**
 
 # Things I learned from Header
 
@@ -133,6 +135,8 @@ If pair siblings have the same value of "flex-grow" they will ocuppy the contain
 
 *The property "flex-shrink"* It determines the rate at which an element will shrink compared to its siblings. If pair siblings have the same value of "flex-grow" they will ocuppy the containers width evenly. Default value: 1. 
 
+**Time-stamp: 1:34:00**
+
 # Things I learned from Brand
 
 **Helper files to make the code look cleaner**
@@ -156,4 +160,37 @@ Then, on your component.jsx file you import them from the helper file, like this
     import {<fileName-1>, <fileName-2>, <fileName-3>, <fileName-4>} from "./imports"
 
 *This will make your code look cleaner!*
-  
+
+**Time-stamp: 1:38:00**
+
+# Things I learned from Header & Feature
+
+**Auto import keyboard shortcut**
+
+To automatically import a component you just need to type it and when you've finished hit: CTRL + SPACEBAR. 
+
+**The power of React: Creating and using components**
+
+Instead of repeating code writing for a single element that will be used any number of times across the webpage, you can channel your *React-powers* and create this element as a *component* and simply use copy it wherever you need it.
+
+By defining its basic HTML (JSX) structure and setting up *props* (properties, like in an object) you can create a *template element* that can be modified by assigning different values to each one of its "props".
+
+    const Feature = ({ title, text }) => {
+      return (
+        <div className="gpt3__features-container__feature">
+          <div className="gpt3__features-container__feature-title">
+            <div />
+            <h1>{title}</h1>
+          </div>
+          <div className="gpt3__features-container_feature-text"><p>{text}</p></div>
+        </div>
+      );
+    };
+
+In the example above, "title" and "text" are both props of "Feature". Which, where the "Feature" is used, are then given the required values:
+
+    <Feature title="What is GPT-3" text="We so opinion..." />
+
+*So resourceful!*
+
+**Time-stamp: 2:00:00**
