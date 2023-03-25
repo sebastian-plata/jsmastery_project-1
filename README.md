@@ -88,11 +88,11 @@ Time-stamp: 1:06:00
 
 JSX allows you to import assets and media you wish to include in your project by importing it in the component's file like:
 
-    import <file> from '/<path>/<to>/<file.xxx>'
+    import <fileName> from '/<path>/<to>/<fileName>.xxx'
 
 Which you can then use in JSX like your using a variable:
 
-     <img src={<file>} alt="..." />
+     <img src={<fileName>} alt="..." />
 
 **Using flex:; do asign space in the layour more efficiently**
 
@@ -132,3 +132,28 @@ Now flex is a shorthand property for other three flexblox properties, namely: fl
 If pair siblings have the same value of "flex-grow" they will ocuppy the containers width evenly. Default value: 0.
 
 *The property "flex-shrink"* It determines the rate at which an element will shrink compared to its siblings. If pair siblings have the same value of "flex-grow" they will ocuppy the containers width evenly. Default value: 1. 
+
+# Things I learned from Brand
+
+**Helper files to make the code look cleaner**
+
+There are going to be times in which you'll have to import a bunch of files into a component. This would require you to repeat the import line for every single file as many times as files needed. However, you could also create a *helper file* "imports.js" and import all the files there: 
+
+    import <fileName-1> from "<path>/<to>/<fileName-1>.xxx"
+    import <fileName-2> from "<path>/<to>/<fileName-2>.xxx"
+    import <fileName-3> from "<path>/<to>/<fileName-3>.xxx"
+    import <fileName-4> from "<path>/<to>/<fileName-4>.xxx"
+
+    export {
+        <fileName-1>,
+        <fileName-2>,
+        <fileName-3>,
+        <fileName-4>   
+    }  
+
+Then, on your component.jsx file you import them from the helper file, like this:
+
+    import {<fileName-1>, <fileName-2>, <fileName-3>, <fileName-4>} from "./imports"
+
+*This will make your code look cleaner!*
+  
