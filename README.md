@@ -163,7 +163,7 @@ Then, on your component.jsx file you import them from the helper file, like this
 
 **Time-stamp: 1:38:00**
 
-# Things I learned from Header & Feature
+# Things I learned from WhatGPT3
 
 **Auto import keyboard shortcut**
 
