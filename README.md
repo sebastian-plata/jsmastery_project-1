@@ -194,3 +194,37 @@ In the example above, "title" and "text" are both props of "Feature". Which, whe
 *So resourceful!*
 
 **Time-stamp: 2:00:00**
+
+# Things I learned from Features
+
+**Create an ARRAY of objects to write any number of the same component**
+
+When using a component more than three times, it is much efficient to create an array of objects that have the components' as properties. For instance:
+
+    The "Feature" component has two props: "title" and "text"
+
+    If you were to add any number of "Feature" components, to avoid, repeating yourself you could create the following array:
+
+    const featuresData = [
+        {title : "<value>", text : "<value>"},
+        {title : "<value>", text : "<value>"},
+        {title : "<value>", text : "<value>"},
+        ...
+    ];
+
+    Then, to implement this array in you code, in order to print the number of "Feature" components, you'd:
+
+    <div className='gpt3__features-container'>
+
+       {featuresData.map((item, index) => 
+        <Feature key={item.title + index} title={item.title} text={item.text} />
+       )}
+
+    </div>
+
+    It is important to include the "key={index}" prop in order for React to understand that each object is "independent"
+
+*WOW! Syntactic Sugar!!*
+
+**Time-stamp: 2:11:00**
+
