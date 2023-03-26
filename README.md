@@ -228,3 +228,8 @@ When using a component more than three times, it is much efficient to create an 
 
 **Time-stamp: 2:11:00**
 
+# Things I learned from Possibility & CTA
+
+Not much. Just some good ole CSS flexbox drills. 
+
+**Time-stamps for both are, respectively: 2:23:00 and 2:33:00**
