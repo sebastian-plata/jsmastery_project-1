@@ -233,3 +233,11 @@ When using a component more than three times, it is much efficient to create an 
 Not much. Just some good ole CSS flexbox drills. 
 
 **Time-stamps for both are, respectively: 2:23:00 and 2:33:00**
+
+# Things I learned from Blog
+
+**Using CSS Grid to layout components like cards**
+
+When you're put in a situation where you want to layout a number of components in different ways. What you want to do is set a grid layout to distribute the components easily. This can be done even inside a flexbox element. 
+
+**Time-stamp: 2:55:00**
