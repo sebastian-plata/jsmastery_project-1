@@ -248,6 +248,6 @@ When you're put in a situation where you want to layout a number of components i
 
 One thing that has caugth my attention throught out the project is that, in React, each component has its own media queries and that those have varying max-width. It is interesting to me to work media queries independently because until now it used to get kinda hectic when you wanted to modify an element or group of elements. I believe it mostly has to do with the structure that working with React provides, but I like it better than working with "vanilla" HTML, CSS.
 
-Looking forward for the next project. This one is ended and it has been a great experience. I feel my understanding of React has grown stronger and Im very confident in my ability to develop a website with it.
+Looking forward to the next project. This one is ended and it has been a great experience. I feel my understanding of React has grown stronger and Im very confident in my ability to develop a website with it.
 
 **Time-stamp: 3:17:00**
